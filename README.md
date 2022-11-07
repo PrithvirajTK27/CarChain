@@ -12,6 +12,11 @@ This project uses:
 
 > Make sure you are running Ganache and Metmask Locally on Port 8545
 
+> This rep has its node modules configured, so use the following commands
+> 1) truffle migrate --reset
+> 2) npm run dev
+> 3) Make sure that the localhost is connected to metamask(port 8545).
+
 Compile the Contracts with:  
 ```truffle compile```
 
