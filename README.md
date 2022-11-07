@@ -1,7 +1,5 @@
 # Decentral Rental
 
-This project was built as a final project for [Consensys Academy Developer Program](https://courses.consensys.net/courses/course-v1:ConsenSysAcademy+2018DP+1/about)
-
 This specific project represents a decentralized car rental serive. Where users can list and rent cars for others to use.
 
 ## Setup Instructions
