@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Decentral Rental</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-push-2">
+      <h1 class="text-center">Decentral Rental</h1>
+      <hr/>
+      <br/>
+    </div>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="New Car Details">Add a Car for Rent</label>
+      <input type="text" class="form-control" id="makeInfo" aria-describedby="carModel" placeholder="Enter Model">
+      <small id="example" class="form-text text-s">Example: Honda Civic</small>
+      <p></p>
+      <label for="owner">Owner Address</label>
+      <input type="text" class="form-control" id="owner" placeholder="0x00..">
+      <small id="example" class="form-text text-s">Warning: Only the owner can mark car as returned</small>
+      <p></p>
+      <label for="year">Car Year</label>
+      <input type="number" class="form-control" id="year" placeholder="2017">
+      <label for="year">License Plate Number</label>
+      <input type="text" class="form-control" id="licenseNumber" placeholder="GTYN-321F">
+    </div>
+    <button type="submit" class="btn btn-primary btn-addCar">Add Car</button>
+  </form>
+
+      <div id="carsRow" class="row">
+        <!-- CARS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="carTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-car">
+          <div class="panel-heading">
+            <h3 class="panel-title">Honda Civic</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="images/camaro.jpg" data-holder-rendered="false">
+            <br/><br/>
+            <strong>Make</strong>: <span class="car-make">Chevy Camaro</span><br/>
+            <strong>Year</strong>: <span class="car-year">2015</span><br/>
+            <strong>License</strong>: <span class="car-licenseNumber">XXXX-XXX</span><br/>
+            <strong>Available</strong>: <span class="car-isAvailable">No</span><br/><br/>
+            <button class="btn btn-success btn-rent" type="button" data-id="0">Rent</button>
+            <button class="btn btn-success btn-return" type="button" data-id="0">Return</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

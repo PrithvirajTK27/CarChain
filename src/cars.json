@@ -1,0 +1,22 @@
+[
+  {
+    "make": "Ford Fusion",
+    "picture": "images/camaro.jpg",
+    "isAvailable": false,
+    "rentee":"0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
+    "owner":  "0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
+    "year": 2018,
+    "licenseNumber": "165415641",
+    "carId": 0
+  },
+    {
+    "make": "BMW",
+    "picture": "images/camaro.jpg",
+    "isAvailable": true,
+    "rentee":"0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
+    "owner":  "0x126bF276bA4C7111dbddbb542718CfF678C9b3Ce",
+    "year": 2017,
+    "licenseNumber": "445115",
+    "carId": 1
+  }
+]
